@@ -4,13 +4,14 @@ from urllib.parse import quote
 import webbrowser
 from time import sleep
 import pyautogui
+import os
 
 webbrowser.open('https://web.whatsapp.com/')
 sleep(30)
 
 # Ler os dados de uma planilha e pegar dados como nome, telefone e empresa
-workbook = openpyxl.load_workbook('socios.xlsx')
-pagina_socios = workbook['Socio']
+workbook = openpyxl.load_workbook('planilha.xlsx')
+pagina_socios = workbook['nome_da_planilha']
 
 for linha in pagina_socios.iter_rows(min_row=2):
     # Pegando os dados
