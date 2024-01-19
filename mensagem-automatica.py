@@ -1,4 +1,4 @@
-# Instalando importações
+# Instalando bibliotecas
 import openpyxl
 from urllib.parse import quote
 import webbrowser
